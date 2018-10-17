@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CalendarDay from './CalendarDay';
 import Login from './Login';
 
 class App extends Component {

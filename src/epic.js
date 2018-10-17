@@ -13,6 +13,6 @@ import 'rxjs/add/observable/timer';
 
 import { combineEpics } from 'redux-observable';
 
-import fetchScheduleEpic from './pages/CalendarDay/epic';
+import loginEpic from './pages/Login/epic';
 
-export default combineEpics(fetchScheduleEpic);
+export default combineEpics(loginEpic);
