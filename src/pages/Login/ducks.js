@@ -11,10 +11,9 @@ export const initialState = {
 };
 
 export const login = {
-  start: (data) => createAction('START_LOGIN', { data }),
+  start: (data) => createAction('LOGIN_START', { data }),
   fail: (error) => createAction('LOGIN_ERROR', { error }),
-  success: () => createAction('LOGIN_SUCCESS')
+  success: (data) => createAction('LOGIN_SUCCESS', { data })
 };
-
 
 export default createReducer(initialState, {});

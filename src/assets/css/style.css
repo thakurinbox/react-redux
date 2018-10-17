@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* showing loader animation */
+.loader-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #f5e4d2;
+  opacity: 0.5;
+}
+
+.loader {
+  display: table;
+  width: 51px;
+  height: 51px;
+  margin: 20% auto;
+  border-radius: 50%;
+  background: #881e37;
+  animation: loader 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes loader {
+  0%,
+  100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+/* error css */
+.error {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.error {
+  color: red;
+}
+
+/* calendar css */
+.container {
+  height: 720px;
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+.day-container {
+  position: relative;
+}
+
+.day-container .appointment-box {
+  position: absolute;
+  width: 600px;
+  background-color: #ffd9d1;
+  text-align: center;
+}
